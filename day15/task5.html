@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //sort
+//         var arr=[20,15,50,70,61,35,1,100];
+// arr.sort(function(i,j)
+// {
+//     return i-j;
+    
+// })
+// console.log(arr);
+
+// Define the compare function as a callback
+function compareNumbers(i, j) {
+    return i - j;
+}
+
+// Use the callback function in sort()
+var arr = [20, 15, 50, 70, 61, 35, 1, 100];
+arr.sort(compareNumbers);
+
+console.log(arr);
+
+    </script>
+</body>
+</html>
